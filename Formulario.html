@@ -1,0 +1,56 @@
+Claro! Aqui está um exemplo básico de estrutura de formulário em HTML. Esse formulário inclui campos comuns como nome,
+e-mail, senha, gênero, interesses, e uma área de mensagem:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+
+    <form action="/enviar" method="post">
+
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br><br>
+
+
+        <label>Interesses:</label><br>
+        <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+        <label for="tecnologia">Tecnologia</label><br>
+        <input type="checkbox" id="esportes" name="interesses" value="esportes">
+        <label for="esportes">Esportes</label><br>
+        <input type="checkbox" id="musica" name="interesses" value="musica">
+        <label for="musica">Música</label><br><br>
+
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea><br><br>
+
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
+
+
